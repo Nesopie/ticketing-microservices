@@ -10,4 +10,5 @@ jobs:
       - uses: actions/checkout@v2
         env: 
           STRIPE_KEY: ${{ secrets.STRIPE_KEY }}
-      - run: cd payments && npm install && npm run test:ci
+      - run: echo $STRIPE_KEY && cd payments && npm install && npm run test:ci
+        
