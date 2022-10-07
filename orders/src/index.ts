@@ -7,7 +7,7 @@ import { ExpirationCompleteListener } from "./events/listeners/ExpirationComplet
 import { PaymentCreatedListener } from "./events/listeners/PaymentCreatedListener";
 
 (async () => {
-    console.log("Staring up...");
+    console.log("Staring up....");
     try {
         if (!process.env.JWT_KEY) throw new Error("JWT_KEY must be defined");
         if (!process.env.MONGO_URI)
