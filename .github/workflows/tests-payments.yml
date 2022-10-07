@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        env: 
+      - env: 
           STRIPE_KEY: ${{ secrets.STRIPE_KEY }}
       - run: echo $STRIPE_KEY
         
