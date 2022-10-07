@@ -8,8 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Decode base64 secrets
+#       - name: Decode base64 secrets
         env: 
-          STRIPE_KEY: $secrets.STRIPE_KEY
+          STRIPE_KEY: $ secrets.STRIPE_KEY
       - run: echo $STRIPE_KEY
         
